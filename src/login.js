@@ -30,9 +30,6 @@ logInForm.addEventListener('submit', function(e) {
                     username: formUsername.value,
                     password: formPassword.value
                 }
-            
-            // console.log(loggedUser);
-
             localStorage.setItem('currentUser', JSON.stringify(loggedUser));
             window.location.pathname = 'pages/timeline.html';
         } else {
